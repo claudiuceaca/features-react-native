@@ -37,10 +37,8 @@ Welcome to Features React Native, a repository showcasing various features and c
      npx expo run:android
 
 ## Features:
- (incoming...)
-
-### Screenshots/GIFs for app1
- (incoming...)
+ -  Expandable Bottom Sheet
+ <img src="https://github.com/claudiuceaca/features-react-native/assets/110819428/4253d64b-6906-4990-9d2b-3756c3d3f906" alt="BasicShop" width="210"/>  
 
 ## Folder Structure:
           /                                         
