@@ -12,7 +12,8 @@ const App = () => {
         <SafeAreaViewAndroid>
             <View style={styles.container}>
                 <Text style={styles.title}>Choose a Feature</Text>
-                <Button text={'BottomSheet'} onPress={() => router.push('/BottomSheet')} />
+                <Button text={'Bottom Sheet'} onPress={() => router.push('/BottomSheet')} />
+                <Button text={'Drag To Rearrange'} onPress={() => router.push('/DragToRearrange')} />
             </View >
         </SafeAreaViewAndroid>
     )

@@ -44,6 +44,11 @@ const InitialLayout = () => {
           title: 'Bottom Sheet',
         }}
       />
+      <Stack.Screen name="DragToRearrange/index"
+        options={{
+          title: 'Drag To Rearrange',
+        }}
+      />
     </Stack>
   );
 }
