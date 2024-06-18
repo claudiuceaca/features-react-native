@@ -1,5 +1,6 @@
 import Button from '@/components/Button';
 import SafeAreaViewAndroid from '@/components/SafeAreaView';
+import { DEVICE_SIZE } from '@/constants/utils';
 import { useRouter } from 'expo-router';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
@@ -10,7 +11,7 @@ const App = () => {
     return (
         <SafeAreaViewAndroid>
             <View style={styles.container}>
-                <Text>Choose a Feature</Text>
+                <Text style={styles.title}>Choose a Feature</Text>
                 <Button text={'BottomSheet'} onPress={() => router.push('/BottomSheet')} />
             </View >
         </SafeAreaViewAndroid>
@@ -25,5 +26,9 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         marginHorizontal: 20
+    },
+    title: {
+        fontSize: DEVICE_SIZE.SMALL_DEVICE ? 30 : (DEVICE_SIZE.MEDIUM_DEVICE ? 32 : 34),
+        fontWeight: '600'
     }
 })

@@ -1,6 +1,7 @@
 import React from 'react';
 import { TouchableOpacity, Text, StyleSheet } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
+import { DEVICE_SIZE } from '@/constants/utils';
 
 interface ButtonProps {
     text: string;
@@ -44,7 +45,7 @@ const styles = StyleSheet.create({
         overflow: 'hidden',
         alignItems: 'center',
         justifyContent: 'center',
-        height: 30,
+        height: 40,
         width: '100%'
     },
     gradient: {
@@ -54,7 +55,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
     },
     text: {
-        fontSize: 16,
+        fontSize: DEVICE_SIZE.SMALL_DEVICE ? 16 : (DEVICE_SIZE.MEDIUM_DEVICE ? 18 : 20),
         color: '#FFFFFF',
         fontWeight: 'bold',
     },
