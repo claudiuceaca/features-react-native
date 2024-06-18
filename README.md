@@ -37,16 +37,24 @@ Welcome to Features React Native, a repository showcasing various features and c
      npx expo run:android
 
 ## Features:
- -  Expandable Bottom Sheet
- <img src="https://github.com/claudiuceaca/features-react-native/assets/110819428/4253d64b-6906-4990-9d2b-3756c3d3f906" alt="BasicShop" width="210"/>  
+
+| Feature Name            | Image                                                                                     |
+|-------------------------|-------------------------------------------------------------------------------------------|
+| Expandable Bottom Sheet | <img src="https://github.com/claudiuceaca/features-react-native/assets/110819428/4253d64b-6906-4990-9d2b-3756c3d3f906" alt="Expandable Bottom Sheet" width="210"/> |
+| Drag To Rearrange       | <img src="https://github.com/claudiuceaca/features-react-native/assets/110819428/261897c0-47c2-4e44-b368-4492ec6f1bf2" alt="BasicShop" width="210"/>        |
+
 
 ## Folder Structure:
           /                                         
           ├── app/
-          │   │ _layout.tsx  
-          │   │ index.tsx 
-          │   └── ...           
-          ├── components/            
+          │   ├── FeatureName/
+          │   │   ├── FeatureNameComponent.tsx
+          │   │   └── index.tsx
+          │   ├── ...
+          │   ├── _layout.tsx
+          │   └── index.tsx  
+          ├── components/  
+          ├── constants/          
           ├── .gitignore
           ├── package.json                  
           └── ...
