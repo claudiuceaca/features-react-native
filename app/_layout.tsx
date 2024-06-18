@@ -4,6 +4,7 @@ import { Stack } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 import { useEffect } from 'react';
 import { View } from 'react-native';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 export { ErrorBoundary } from 'expo-router';
 
@@ -30,15 +31,28 @@ const InitialLayout = () => {
   }
 
   return (
-    <Stack>
-      <Stack.Screen name="index" options={{ headerShown: false }} />
+    <Stack screenOptions={{
+      contentStyle: { backgroundColor: "white" },
+      headerTitleAlign: 'center'
+    }}>
+      <Stack.Screen
+        name="index"
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen name="BottomSheet/index"
+        options={{
+          title: 'Bottom Sheet',
+        }}
+      />
     </Stack>
   );
 }
 
 const RootLayoutNav = () => {
   return (
-    <InitialLayout />
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      <InitialLayout />
+    </GestureHandlerRootView>
   );
 }
 
