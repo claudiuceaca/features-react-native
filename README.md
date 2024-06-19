@@ -27,7 +27,11 @@ Welcome to Features React Native, a repository showcasing various features and c
     * Configure the `ANDROID_HOME` environment variable to point to your Android SDK location `(usually %LOCALAPPDATA%\Android\Sdk)`.
 
     * Add the platform-tools directory `(usually %LOCALAPPDATA%\Android\Sdk\platform-tools)` to your system's PATH environment variable.
-
+     
+     Ensure Expo Go is installed on your Android simulator to run the app.
+   
+     For iOS, you can use the simulator provided by Xcode directly.
+   
      Alternatively, you can follow the [React Native Android setup guide](https://reactnative.dev/docs/environment-setup?guide=native) or [Expo setup guide for multiple environments](https://docs.expo.dev/get-started/set-up-your-environment/) for detailed instructions.
 
   
@@ -43,6 +47,7 @@ Welcome to Features React Native, a repository showcasing various features and c
 | Expandable Bottom Sheet | <img src="https://github.com/claudiuceaca/features-react-native/assets/110819428/4253d64b-6906-4990-9d2b-3756c3d3f906" alt="Expandable Bottom Sheet" width="210"/> |
 | Drag To Rearrange       | <img src="https://github.com/claudiuceaca/features-react-native/assets/110819428/261897c0-47c2-4e44-b368-4492ec6f1bf2" alt="Drag To Rearrange" width="210"/>        |
 | Swipeable Row       | <img src="https://github.com/claudiuceaca/features-react-native/assets/110819428/121a3c85-dab8-4ca2-9b9c-3e7aac35945e" alt="Swipeable Row" width="210"/>        |
+| Draggable Item       | <img src="https://github.com/claudiuceaca/features-react-native/assets/110819428/ab43297e-640d-4468-a5d1-a68d20b1596b" alt="Draggable Item" width="210"/>        |
 
 
 ## Folder Structure:

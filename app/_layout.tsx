@@ -54,6 +54,11 @@ const InitialLayout = () => {
           title: 'Swipeable Row',
         }}
       />
+      <Stack.Screen name="DraggableItem/index"
+        options={{
+          title: 'Draggable Item',
+        }}
+      />
     </Stack>
   );
 }
