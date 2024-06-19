@@ -2,7 +2,7 @@ import React, { Component, PropsWithChildren } from 'react';
 import { Animated, StyleSheet, Text, View, I18nManager } from 'react-native';
 import { RectButton, Swipeable } from 'react-native-gesture-handler';
 
-export default class AppleStyleSwipeableRow extends Component<
+export default class SwipeableRow extends Component<
     PropsWithChildren<unknown>
 > {
     private renderLeftAction = (
