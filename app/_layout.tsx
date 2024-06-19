@@ -49,6 +49,11 @@ const InitialLayout = () => {
           title: 'Drag To Rearrange',
         }}
       />
+      <Stack.Screen name="SwipeableRow/index"
+        options={{
+          title: 'Swipeable Row',
+        }}
+      />
     </Stack>
   );
 }

@@ -38,10 +38,11 @@ Welcome to Features React Native, a repository showcasing various features and c
 
 ## Features:
 
-| Feature Name            | Image                                                                                     |
+| Feature Name            | Showcase                                                                                     |
 |-------------------------|-------------------------------------------------------------------------------------------|
 | Expandable Bottom Sheet | <img src="https://github.com/claudiuceaca/features-react-native/assets/110819428/4253d64b-6906-4990-9d2b-3756c3d3f906" alt="Expandable Bottom Sheet" width="210"/> |
-| Drag To Rearrange       | <img src="https://github.com/claudiuceaca/features-react-native/assets/110819428/261897c0-47c2-4e44-b368-4492ec6f1bf2" alt="BasicShop" width="210"/>        |
+| Drag To Rearrange       | <img src="https://github.com/claudiuceaca/features-react-native/assets/110819428/261897c0-47c2-4e44-b368-4492ec6f1bf2" alt="Drag To Rearrange" width="210"/>        |
+| Swipeable Row       | <img src="https://github.com/claudiuceaca/features-react-native/assets/110819428/121a3c85-dab8-4ca2-9b9c-3e7aac35945e" alt="Swipeable Row" width="210"/>        |
 
 
 ## Folder Structure:

@@ -19,7 +19,7 @@ const renderItems = () => (
     ))
 )
 
-const DragToSort = () => {
+const App = () => {
     return (
         <View style={styles.container}>
             <SortableList editing={true} onDragEnd={(positions) => console.log(JSON.stringify(positions, null, 2))}>
@@ -29,7 +29,7 @@ const DragToSort = () => {
     );
 };
 
-export default DragToSort;
+export default App;
 
 const styles = StyleSheet.create({
     container: {

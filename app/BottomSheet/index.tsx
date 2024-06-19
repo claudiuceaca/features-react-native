@@ -3,7 +3,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 import React from 'react';
 import { Text } from 'react-native';
 
-const BottomSheet = () => {
+const App = () => {
     return (
         <LinearGradient style={{ flex: 1 }} colors={['#FFC371', '#FF5F6D']}>
             <BottomSheetExpandable>
@@ -13,4 +13,4 @@ const BottomSheet = () => {
     )
 }
 
-export default BottomSheet
+export default App
