@@ -1,4 +1,3 @@
-import { Close, Edit, Save, Send } from '@/assets/images/floatingbutton';
 import { LinearGradient } from 'expo-linear-gradient';
 import React, { FunctionComponent, SVGAttributes } from 'react';
 import { Pressable, StyleSheet, TouchableOpacity } from 'react-native';
@@ -14,12 +13,15 @@ import Animated, {
     withSpring,
     withTiming,
 } from 'react-native-reanimated';
+import { Close, Edit, Save, Send } from '@/assets/images/floatingbutton';
 
 type FloatingButtonItemProps = {
     value: SharedValue<number>;
     delay: number;
     Icon: FunctionComponent<SVGAttributes<SVGElement>>;
 };
+
+const colors = ['#02AAB0', '#00CDAC'];
 
 const FloatingButtonItem = ({ value, delay, Icon }: FloatingButtonItemProps) => {
     const animatedStyle = useAnimatedStyle(() => {
@@ -38,7 +40,7 @@ const FloatingButtonItem = ({ value, delay, Icon }: FloatingButtonItemProps) => 
 
     return (
         <Animated.View style={[styles.contentContainer, animatedStyle]}>
-            <LinearGradient colors={['#02AAB0', '#00CDAC']}>
+            <LinearGradient colors={colors}>
                 <TouchableOpacity style={styles.iconContainer}>
                     <Icon width={22} height={22} />
                 </TouchableOpacity>
@@ -79,6 +81,7 @@ const FloatingButtonLeft = () => {
         };
     });
 
+
     return (
         <>
             <FloatingButtonItem value={thirdValue} delay={160} Icon={Edit} />
@@ -89,7 +92,7 @@ const FloatingButtonLeft = () => {
                 style={styles.contentContainer}
                 onPress={handlePress}>
                 <LinearGradient
-                    colors={['#02AAB0', '#00CDAC']}>
+                    colors={colors}>
                     <Animated.View style={[styles.iconContainer, plusIcon]}>
                         <Close width={22} height={22} />
                     </Animated.View>
