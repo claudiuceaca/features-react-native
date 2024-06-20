@@ -16,6 +16,8 @@ const App = () => {
                 <Button text={'Drag To Rearrange'} onPress={() => router.push('/DragToRearrange')} />
                 <Button text={'Swipeable Row'} onPress={() => router.push('/SwipeableRow')} />
                 <Button text={'Draggable Item'} onPress={() => router.push('/DraggableItem')} />
+                <Button text={'Floating Buttons'} onPress={() => router.push('/FloatingButtons')} />
+
             </View >
         </SafeAreaViewAndroid>
     )

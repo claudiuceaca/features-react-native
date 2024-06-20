@@ -59,6 +59,11 @@ const InitialLayout = () => {
           title: 'Draggable Item',
         }}
       />
+      <Stack.Screen name="FloatingButtons/index"
+        options={{
+          title: 'Floating Buttons',
+        }}
+      />
     </Stack>
   );
 }
