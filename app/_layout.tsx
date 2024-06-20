@@ -5,6 +5,7 @@ import * as SplashScreen from 'expo-splash-screen';
 import { useEffect } from 'react';
 import { View } from 'react-native';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
+import { screenData } from './appData';
 
 export { ErrorBoundary } from 'expo-router';
 
@@ -30,6 +31,7 @@ const InitialLayout = () => {
     return <View />;
   }
 
+
   return (
     <Stack screenOptions={{
       contentStyle: { backgroundColor: "white" },
@@ -39,26 +41,13 @@ const InitialLayout = () => {
         name="index"
         options={{ headerShown: false }}
       />
-      <Stack.Screen name="BottomSheet/index"
+      {screenData.map(screen => <Stack.Screen
+        key={screen.id}
+        name={screen.name}
         options={{
-          title: 'Bottom Sheet',
+          title: screen.title,
         }}
-      />
-      <Stack.Screen name="DragToRearrange/index"
-        options={{
-          title: 'Drag To Rearrange',
-        }}
-      />
-      <Stack.Screen name="SwipeableRow/index"
-        options={{
-          title: 'Swipeable Row',
-        }}
-      />
-      <Stack.Screen name="DraggableItem/index"
-        options={{
-          title: 'Draggable Item',
-        }}
-      />
+      />)}
     </Stack>
   );
 }

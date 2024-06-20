@@ -1,15 +1,17 @@
-import Profile1 from "@/assets/images/profile/Profile1.svg";
-import Profile2 from "@/assets/images/profile/Profile2.svg";
-import Profile3 from "@/assets/images/profile/Profile3.svg";
-import Profile4 from "@/assets/images/profile/Profile4.svg";
-import Profile5 from "@/assets/images/profile/Profile5.svg";
-import Profile6 from "@/assets/images/profile/Profile6.svg";
-import Profile7 from "@/assets/images/profile/Profile7.svg";
-import Profile8 from "@/assets/images/profile/Profile8.svg";
-import Profile9 from "@/assets/images/profile/Profile9.svg";
-import Profile10 from "@/assets/images/profile/Profile10.svg";
-import Profile11 from "@/assets/images/profile/Profile11.svg";
-import Profile12 from "@/assets/images/profile/Profile12.svg";
+import {
+    Profile1,
+    Profile10,
+    Profile11,
+    Profile12,
+    Profile2,
+    Profile3,
+    Profile4,
+    Profile5,
+    Profile6,
+    Profile7,
+    Profile8,
+    Profile9
+} from "@/assets/images/profile";
 
 export const rows = [
     {

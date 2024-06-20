@@ -4,6 +4,7 @@ import { DEVICE_SIZE } from '@/constants/utils';
 import { useRouter } from 'expo-router';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { features } from './appData';
 
 const App = () => {
     const router = useRouter();
@@ -12,10 +13,7 @@ const App = () => {
         <SafeAreaViewAndroid>
             <View style={styles.container}>
                 <Text style={styles.title}>Choose a Feature</Text>
-                <Button text={'Bottom Sheet'} onPress={() => router.push('/BottomSheet')} />
-                <Button text={'Drag To Rearrange'} onPress={() => router.push('/DragToRearrange')} />
-                <Button text={'Swipeable Row'} onPress={() => router.push('/SwipeableRow')} />
-                <Button text={'Draggable Item'} onPress={() => router.push('/DraggableItem')} />
+                {features.map(feat => <Button text={feat.title} onPress={() => router.push(feat.path)} key={feat.id} />)}
             </View >
         </SafeAreaViewAndroid>
     )
