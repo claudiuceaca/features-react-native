@@ -44,11 +44,11 @@ Welcome to Features React Native, a repository showcasing various features and c
 
 | Feature Name            | Showcase                                                                                     |
 |-------------------------|-------------------------------------------------------------------------------------------|
-| Expandable Bottom Sheet | <img src="https://github.com/claudiuceaca/features-react-native/assets/110819428/4253d64b-6906-4990-9d2b-3756c3d3f906" alt="Expandable Bottom Sheet" width="210"/> |
-| Drag To Rearrange       | <img src="https://github.com/claudiuceaca/features-react-native/assets/110819428/261897c0-47c2-4e44-b368-4492ec6f1bf2" alt="Drag To Rearrange" width="210"/>        |
-| Swipeable Row       | <img src="https://github.com/claudiuceaca/features-react-native/assets/110819428/121a3c85-dab8-4ca2-9b9c-3e7aac35945e" alt="Swipeable Row" width="210"/>        |
-| Draggable Item       | <img src="https://github.com/claudiuceaca/features-react-native/assets/110819428/ab43297e-640d-4468-a5d1-a68d20b1596b" alt="Draggable Item" width="210"/>        |
-
+| Expandable Bottom Sheet | <img src="https://github.com/claudiuceaca/features-react-native/assets/110819428/55d2d8f4-b292-46d9-a476-8347442a984c" alt="Expandable Bottom Sheet" width="210"/> |
+| Drag To Rearrange       | <img src="https://github.com/claudiuceaca/features-react-native/assets/110819428/065c63c2-e282-4042-a156-1030b38cf215" alt="Drag To Rearrange" width="210"/>        |
+| Swipeable Row       | <img src="https://github.com/claudiuceaca/features-react-native/assets/110819428/87552836-ad0b-477f-9569-3d0aaddbf724" alt="Swipeable Row" width="210"/>        |
+| Draggable Item       | <img src="https://github.com/claudiuceaca/features-react-native/assets/110819428/cb7451f0-8272-48ce-9591-4fe4395847bc" alt="Draggable Item" width="210"/>        |
+| Floating Buttons       | <img src="https://github.com/claudiuceaca/features-react-native/assets/110819428/b0d79158-8daf-4744-b377-61a2ef1c546e" alt="Draggable Item" width="210"/>        |
 
 ## Folder Structure:
           /                                         
