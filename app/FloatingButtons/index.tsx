@@ -1,11 +1,13 @@
 import React from 'react'
 import { StyleSheet, View } from 'react-native'
-import FloatingButtonLeft from './FloatingButtonLeft'
+import FloatingButtonsAround from './FloatingButtonsAround'
+import FloatingButtonsUp from './FloatingButtonsUp'
 
 const index = () => {
   return (
     <View style={styles.container}>
-      <FloatingButtonLeft />
+      <FloatingButtonsUp />
+      <FloatingButtonsAround />
     </View>
   )
 }

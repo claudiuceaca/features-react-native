@@ -49,7 +49,7 @@ const FloatingButtonItem = ({ value, delay, Icon }: FloatingButtonItemProps) => 
     );
 };
 
-const FloatingButtonLeft = () => {
+const FloatingButtonsUp = () => {
     const firstValue = useSharedValue(30);
     const secondValue = useSharedValue(30);
     const thirdValue = useSharedValue(30);
@@ -102,7 +102,7 @@ const FloatingButtonLeft = () => {
     );
 };
 
-export default FloatingButtonLeft;
+export default FloatingButtonsUp;
 
 const styles = StyleSheet.create({
     contentContainer: {
