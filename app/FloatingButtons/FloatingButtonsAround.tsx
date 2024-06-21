@@ -19,7 +19,7 @@ type FloatingButtonItemProps = {
     animatedStyle: any;
 };
 
-const colors = ['#FFC371', '#FF5F6D'];
+const colors = ['#DA22FF', '#9733EE'];
 
 const FloatingButtonItem = ({ Icon, animatedStyle, }: FloatingButtonItemProps) => {
     return (

@@ -56,17 +56,22 @@ const FlatListSynced = () => {
                 }}
                 pagingEnabled
                 keyExtractor={item => item.id.toString()}
-                renderItem={({ item }) => (
+                renderItem={({ item, index }) => (
                     <View style={{ width, height }}>
                         <LinearGradient
-
-                            colors={item.color} style={StyleSheet.absoluteFillObject}>
+                            colors={item.color}
+                            style={[StyleSheet.absoluteFillObject,
+                            styles.indexTextBig
+                            ]}>
+                            <Text style={{ color: 'white', fontSize: 50 }}>
+                                {index}
+                            </Text>
                         </LinearGradient>
-                    </View>
+                    </View >
                 )}
             />
 
-            <FlatList
+            < FlatList
                 ref={thumbRef}
                 data={colors}
                 horizontal
@@ -85,6 +90,9 @@ const FlatListSynced = () => {
                             {
                                 borderColor: activeIndex === index ? '#fff' : 'transparent'
                             }]}>
+                            <Text style={styles.indexText}>
+                                {index}
+                            </Text>
                         </LinearGradient>
                     </TouchableOpacity>
                 )}
@@ -106,6 +114,16 @@ const styles = StyleSheet.create({
     thumbImage: {
         width: IMAGE_SIZE,
         height: IMAGE_SIZE,
-        borderWidth: 2,
+        borderWidth: 3,
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+    indexText: {
+        color: '#fff'
+    },
+    indexTextBig: {
+        justifyContent: 'center',
+        alignItems: 'center',
+        paddingBottom: 180
     }
 })

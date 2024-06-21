@@ -14,7 +14,7 @@ export default class SwipeableRow extends Component<
         });
         return (
             <Animated.View style={{ transform: [{ translateX: trans }] }}>
-                <RectButton style={[styles.leftAction, { backgroundColor: '#497AFC' }]} onPress={this.close}>
+                <RectButton style={[styles.leftAction, { backgroundColor: '#DA22FF' }]} onPress={this.close}>
                     <Text style={styles.actionText}>Archive</Text>
                 </RectButton>
             </Animated.View>

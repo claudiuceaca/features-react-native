@@ -5,7 +5,7 @@ import { Text } from 'react-native';
 
 const App = () => {
     return (
-        <LinearGradient style={{ flex: 1 }} colors={['#FFC371', '#FF5F6D']}>
+        <LinearGradient style={{ flex: 1 }} colors={['#DA22FF', '#9733EE']}>
             <BottomSheetExpandable>
                 <Text>Bottom Sheet Content</Text>
             </BottomSheetExpandable>

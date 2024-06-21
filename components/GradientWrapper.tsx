@@ -9,11 +9,7 @@ interface GradientWrapperProps {
 
 const generateRandomGradient = () => {
     const colors = [
-        ['#FF512F', '#DD2476'],
-        ['#FFC371', '#FF5F6D'],
-        ['#02AAB0', '#00CDAC'],
-        ['#DA22FF', '#9733EE'],
-        ['#8E2DE2', '#4A00E0'],
+        ['#DA22FF', '#9733EE']
     ];
 
     const randomIndex = Math.floor(Math.random() * colors.length);

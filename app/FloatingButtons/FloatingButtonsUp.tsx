@@ -21,7 +21,7 @@ type FloatingButtonItemProps = {
     Icon: FunctionComponent<SVGAttributes<SVGElement>>;
 };
 
-const colors = ['#02AAB0', '#00CDAC'];
+const colors = ['#DA22FF', '#9733EE'];
 
 const FloatingButtonItem = ({ value, delay, Icon }: FloatingButtonItemProps) => {
     const animatedStyle = useAnimatedStyle(() => {

@@ -1,9 +1,16 @@
 const NUM_ITEMS = 6;
 
 function getColor(index: number) {
-    const multiplier = 255 / (NUM_ITEMS - 1);
-    const colorVal = index * multiplier;
-    return `rgb(${colorVal}, ${Math.abs(128 - colorVal)}, ${255 - colorVal})`;
+    const colors = [
+        '#EAD3FF', '#DA22FF',
+        '#D8AAFF', '#C822FF',
+        '#C682FF', '#B622FF',
+        '#B45AFF', '#A422FF',
+        '#A232FF', '#9222FF',
+        '#902AFF', '#8222FF'
+    ];
+
+    return colors[index % colors.length];
 }
 
 export type Item = {
