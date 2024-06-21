@@ -49,6 +49,7 @@ Welcome to Features React Native, a repository showcasing various features and c
 | Swipeable Row       | <img src="https://github.com/claudiuceaca/features-react-native/assets/110819428/87552836-ad0b-477f-9569-3d0aaddbf724" alt="Swipeable Row" width="210"/>        |
 | Draggable Item       | <img src="https://github.com/claudiuceaca/features-react-native/assets/110819428/cb7451f0-8272-48ce-9591-4fe4395847bc" alt="Draggable Item" width="210"/>        |
 | Floating Buttons       | <img src="https://github.com/claudiuceaca/features-react-native/assets/110819428/b0d79158-8daf-4744-b377-61a2ef1c546e" alt="Draggable Item" width="210"/>        |
+| FlatList Synced       | <img src="https://github.com/claudiuceaca/features-react-native/assets/110819428/3365a020-bd1b-4361-8d2d-0fcaa877883e" alt="Draggable Item" width="210"/>        |
 
 ## Folder Structure:
           /                                         
