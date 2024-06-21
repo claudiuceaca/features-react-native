@@ -24,6 +24,11 @@ export const features = [
         title: 'Floating Buttons',
         path: '/FloatingButtons'
     },
+    {
+        id: 6,
+        title: 'FlatList Synced',
+        path: '/FLatListSynced'
+    },
 ]
 
 export const screenData = [
@@ -51,5 +56,10 @@ export const screenData = [
         id: 5,
         name: "FloatingButtons/index",
         title: 'Floating Buttons',
+    },
+    {
+        id: 6,
+        name: "FLatListSynced/index",
+        title: 'FlatList Synced',
     },
 ]
