@@ -6,7 +6,7 @@ import { ScrollView, StyleSheet, View } from 'react-native';
 const BottomSheetExpandable = ({ children }: any) => {
     const sheetRef = useRef<BottomSheet>(null);
 
-    const snapPoints = useMemo(() => ["60%", "88%"], []);
+    const snapPoints = useMemo(() => ["50%", "88%"], []);
 
     // callbacks
     const handleSheetChange = useCallback((index: any) => {

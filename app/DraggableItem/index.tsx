@@ -16,7 +16,7 @@ const App = () => {
                 disabled={isActive}
                 style={[
                     styles.rowItem,
-                    { backgroundColor: isActive ? '#bbb' : item.backgroundColor },
+                    { backgroundColor: isActive ? 'red' : item.backgroundColor },
                 ]}
             >
                 <Text style={styles.text}>{item.label}</Text>

@@ -44,12 +44,12 @@ Welcome to Features React Native, a repository showcasing various features and c
 
 | Feature Name            | Showcase                                                                                     |
 |-------------------------|-------------------------------------------------------------------------------------------|
-| Expandable Bottom Sheet | <img src="https://github.com/claudiuceaca/features-react-native/assets/110819428/55d2d8f4-b292-46d9-a476-8347442a984c" alt="Expandable Bottom Sheet" width="210"/> |
-| Drag To Rearrange       | <img src="https://github.com/claudiuceaca/features-react-native/assets/110819428/065c63c2-e282-4042-a156-1030b38cf215" alt="Drag To Rearrange" width="210"/>        |
-| Swipeable Row       | <img src="https://github.com/claudiuceaca/features-react-native/assets/110819428/87552836-ad0b-477f-9569-3d0aaddbf724" alt="Swipeable Row" width="210"/>        |
-| Draggable Item       | <img src="https://github.com/claudiuceaca/features-react-native/assets/110819428/cb7451f0-8272-48ce-9591-4fe4395847bc" alt="Draggable Item" width="210"/>        |
-| Floating Buttons       | <img src="https://github.com/claudiuceaca/features-react-native/assets/110819428/b0d79158-8daf-4744-b377-61a2ef1c546e" alt="Draggable Item" width="210"/>        |
-| FlatList Synced       | <img src="https://github.com/claudiuceaca/features-react-native/assets/110819428/3365a020-bd1b-4361-8d2d-0fcaa877883e" alt="Draggable Item" width="210"/>        |
+| Expandable Bottom Sheet | <img src="/app/BottomSheet/DemoBottomSheet.gif" alt="Expandable Bottom Sheet" width="210"/> |
+| Drag To Rearrange       | <img src="/app/DragToRearrange/DemoToRearrange.gif" alt="Drag To Rearrange" width="210"/>        |
+| Swipeable Row       | <img src="/app/SwipeableRow/DemoSwipeableRow.gif"/>        |
+| Draggable Item       | <img src="/app/DraggableItem/DemoDraggableItem.gif"/>        |
+| Floating Buttons       | <img src="/app/FloatingButtons/DemoFloatingButtons.gif" alt="Draggable Item" width="210"/>        |
+| FlatList Synced       | <img src="/app/FLatListSynced/DemoFlatListSynced.gif" alt="Draggable Item" width="210"/>        |
 
 ## Folder Structure:
           /                                         

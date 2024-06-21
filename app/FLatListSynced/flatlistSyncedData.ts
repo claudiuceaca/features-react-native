@@ -1,38 +1,34 @@
 export const colors = [
     {
         id: 1,
-        color: ['#FF512F', '#DD2476'],
+        color: ['#D8AAFF', '#C822FF'],
     },
     {
         id: 2,
-        color: ['#FFC371', '#FF5F6D'],
+        color: ['#C682FF', '#B622FF'],
     },
     {
         id: 3,
-        color: ['#DA22FF', '#9733EE'],
+        color: ['#B45AFF', '#A422FF'],
     },
     {
         id: 4,
-        color: ['#02AAB0', '#00CDAC'],
+        color: ['#A232FF', '#9222FF'],
     },
     {
         id: 5,
-        color: ['#4a86f6', '#5a4af6'],
+        color: ['#902AFF', '#8222FF'],
     },
     {
         id: 6,
-        color: ['#fa6de7', '#d40cb9'],
+        color: ['#7E22FF', '#7222FF'],
     },
     {
         id: 7,
-        color: ['#FFC371', '#FF5F6D'],
+        color: ['#6C1AFF', '#6222FF'],
     },
     {
         id: 8,
-        color: ['#FFB199', '#FF0844'],
-    },
-    {
-        id: 9,
-        color: ['#EE9AE5', '#5961F9'],
+        color: ['#5A12FF', '#5222FF'],
     },
 ];
