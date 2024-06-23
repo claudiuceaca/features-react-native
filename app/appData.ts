@@ -29,6 +29,11 @@ export const features = [
         title: 'FlatList Synced',
         path: '/FLatListSynced'
     },
+    {
+        id: 7,
+        title: 'Star Ratings',
+        path: '/StarRating'
+    },
 ]
 
 export const screenData = [
@@ -61,5 +66,10 @@ export const screenData = [
         id: 6,
         name: "FLatListSynced/index",
         title: 'FlatList Synced',
+    },
+    {
+        id: 7,
+        name: "StarRating/index",
+        title: 'Star Rating',
     },
 ]

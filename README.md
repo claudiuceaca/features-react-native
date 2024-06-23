@@ -50,6 +50,7 @@ Welcome to Features React Native, a repository showcasing various features and c
 | Draggable Item       | <img src="/app/DraggableItem/DemoDraggableItem.gif"/>        |
 | Floating Buttons       | <img src="/app/FloatingButtons/DemoFloatingButtons.gif" alt="Draggable Item" width="210"/>        |
 | FlatList Synced       | <img src="/app/FLatListSynced/DemoFlatListSynced.gif" alt="Draggable Item" width="210"/>        |
+| Star Rating       | <img src="/app/StarRating/StarRating.gif" alt="Draggable Item" width="210"/>        |
 
 ## Folder Structure:
           /                                         
