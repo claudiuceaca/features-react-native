@@ -34,6 +34,11 @@ export const features = [
         title: 'Star Ratings',
         path: '/StarRating'
     },
+    {
+        id: 8,
+        title: 'Floating Reaction',
+        path: '/FloatingReaction'
+    },
 ]
 
 export const screenData = [
@@ -71,5 +76,10 @@ export const screenData = [
         id: 7,
         name: "StarRating/index",
         title: 'Star Rating',
+    },
+    {
+        id: 8,
+        name: "FloatingReaction/index",
+        title: 'Floating Reaction',
     },
 ]
