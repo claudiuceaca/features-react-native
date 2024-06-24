@@ -46,11 +46,12 @@ Welcome to Features React Native, a repository showcasing various features and c
 |-------------------------|-------------------------------------------------------------------------------------------|
 | Expandable Bottom Sheet | <img src="/app/BottomSheet/DemoBottomSheet.gif" alt="Expandable Bottom Sheet" width="210"/> |
 | Drag To Rearrange       | <img src="/app/DragToRearrange/DemoToRearrange.gif" alt="Drag To Rearrange" width="210"/>        |
-| Swipeable Row       | <img src="/app/SwipeableRow/DemoSwipeableRow.gif"/>        |
-| Draggable Item       | <img src="/app/DraggableItem/DemoDraggableItem.gif"/>        |
-| Floating Buttons       | <img src="/app/FloatingButtons/DemoFloatingButtons.gif" alt="Draggable Item" width="210"/>        |
-| FlatList Synced       | <img src="/app/FLatListSynced/DemoFlatListSynced.gif" alt="Draggable Item" width="210"/>        |
-| Star Rating       | <img src="/app/StarRating/StarRating.gif" alt="Draggable Item" width="210"/>        |
+| Swipeable Row       | <img src="/app/SwipeableRow/DemoSwipeableRow.gif" alt="Swipeable Row" width="210"/>        |
+| Draggable Item       | <img src="/app/DraggableItem/DemoDraggableItem.gif" alt="Draggable Item" width="210"/>        |
+| Floating Buttons       | <img src="/app/FloatingButtons/DemoFloatingButtons.gif" alt="Floating Buttons" width="210"/>        |
+| FlatList Synced       | <img src="/app/FLatListSynced/DemoFlatListSynced.gif" alt="FlatList Synced" width="210"/>        |
+| Star Rating       | <img src="/app/StarRating/StarRating.gif" alt="Star Rating" width="210"/>        |
+| Floating Reaction       | <img src="/app/FloatingReaction/FloatingReaction.gif" alt="Floating Reaction" width="210"/>        |
 
 ## Folder Structure:
           /                                         
