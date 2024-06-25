@@ -39,6 +39,11 @@ export const features = [
         title: 'Floating Reaction',
         path: '/FloatingReaction'
     },
+    {
+        id: 9,
+        title: 'Circular Progress Bar',
+        path: '/CircularProgressBar'
+    },
 ]
 
 export const screenData = [
@@ -81,5 +86,10 @@ export const screenData = [
         id: 8,
         name: "FloatingReaction/index",
         title: 'Floating Reaction',
+    },
+    {
+        id: 9,
+        name: "CircularProgressBar/index",
+        title: 'Circular Progress Bar',
     },
 ]
