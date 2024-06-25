@@ -2,6 +2,7 @@ import { width } from '@/constants/utils'
 import React, { useState } from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 import StarRating from './StarRating'
+import { Colors } from '@/constants/Colors'
 
 const App = () => {
     const [rating, setRating] = useState(1)
@@ -26,7 +27,7 @@ const styles = StyleSheet.create({
     },
     textRating: {
         fontSize: 70,
-        color: "#9733EE",
+        color: Colors.purple,
         fontWeight: '700'
     }
 })
