@@ -52,7 +52,7 @@ Welcome to Features React Native, a repository showcasing various features and c
 | FlatList Synced       | <img src="/app/FLatListSynced/DemoFlatListSynced.gif" alt="FlatList Synced" width="210"/>        |
 | Star Rating       | <img src="/app/StarRating/StarRating.gif" alt="Star Rating" width="210"/>        |
 | Floating Reaction       | <img src="/app/FloatingReaction/FloatingReaction.gif" alt="Floating Reaction" width="210"/>        |
-| Circular Progress Bar      | <img src="/app/FloatingReaction/FloatingReaction.gif" alt="Circular Progress Bar" width="210"/>        |
+| Circular Progress Bar      | <img src="/app/CircularProgressBar/DemoCircularProgressbar.gif" alt="Circular Progress Bar" width="210"/>        |
 
 ## Folder Structure:
           /                                         
