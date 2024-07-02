@@ -44,6 +44,11 @@ export const features = [
         title: 'Circular Progress Bar',
         path: '/CircularProgressBar'
     },
+    {
+        id: 10,
+        title: 'Toast Message',
+        path: '/ToastMessage'
+    },
 ]
 
 export const screenData = [
@@ -91,5 +96,10 @@ export const screenData = [
         id: 9,
         name: "CircularProgressBar/index",
         title: 'Circular Progress Bar',
+    },
+    {
+        id: 10,
+        name: "ToastMessage/index",
+        title: 'Toast Message',
     },
 ]
