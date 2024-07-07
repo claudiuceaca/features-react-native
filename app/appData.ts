@@ -49,6 +49,11 @@ export const features = [
         title: 'Toast Message',
         path: '/ToastMessage'
     },
+    {
+        id: 11,
+        title: 'FlatList Animated',
+        path: '/FlatListAnimated'
+    },
 ]
 
 export const screenData = [
@@ -101,5 +106,10 @@ export const screenData = [
         id: 10,
         name: "ToastMessage/index",
         title: 'Toast Message',
+    },
+    {
+        id: 11,
+        name: "FlatListAnimated/index",
+        title: 'FlatList Animated',
     },
 ]
