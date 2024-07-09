@@ -2,6 +2,8 @@ import React from 'react';
 import { FlatList, StyleSheet, Text, View } from 'react-native';
 import SwipeableRow from './SwipeableRow';
 import { rows } from './rowsData';
+import { DEVICE_SIZE } from '@/constants/utils';
+import { Colors } from '@/constants/Colors';
 
 const NUM_ITEMS = 11;
 
@@ -54,7 +56,7 @@ const styles = StyleSheet.create({
     },
     text: {
         fontWeight: 'bold',
-        fontSize: 18,
-        color: '#DA22FF'
+        fontSize: DEVICE_SIZE.SMALL_DEVICE ? 16 : (DEVICE_SIZE.MEDIUM_DEVICE ? 18 : 20),
+        color: Colors.purple
     },
 });
