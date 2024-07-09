@@ -1,18 +1,22 @@
 import { Colors } from "@/constants/Colors";
 import BottomSheet from "@gorhom/bottom-sheet";
-import React, { useCallback, useMemo, useRef } from 'react';
+import React, { ReactNode, useCallback, useMemo, useRef } from 'react';
 import { ScrollView, StyleSheet, View } from 'react-native';
 
-const BottomSheetExpandable = ({ children }: any) => {
+type BottomSheetExpandableProps = {
+    children: ReactNode;
+};
+
+const BottomSheetExpandable = ({ children }: BottomSheetExpandableProps) => {
     const sheetRef = useRef<BottomSheet>(null);
 
     const snapPoints = useMemo(() => ["50%", "88%"], []);
 
     // callbacks
-    const handleSheetChange = useCallback((index: any) => {
+    const handleSheetChange = useCallback((index: number) => {
         console.log("handleSheetChange", index);
     }, []);
-    const handleSnapPress = useCallback((index: any) => {
+    const handleSnapPress = useCallback((index: number) => {
         sheetRef.current?.snapToIndex(index);
     }, []);
     const handleClosePress = useCallback(() => {
@@ -33,10 +37,10 @@ const BottomSheetExpandable = ({ children }: any) => {
                 <View style={{ marginBottom: 50 }} />
             </ScrollView>
         </BottomSheet>
-    )
-}
+    );
+};
 
-export default BottomSheetExpandable
+export default BottomSheetExpandable;
 
 const styles = StyleSheet.create({
     container: {
@@ -48,6 +52,6 @@ const styles = StyleSheet.create({
         paddingTop: 24,
         paddingHorizontal: 16,
         marginBottom: 90,
-        zIndex: 15
+        zIndex: 15,
     },
-})
+});

@@ -1,6 +1,5 @@
 import { Colors } from "@/constants/Colors";
 import { DEVICE_SIZE } from "@/constants/utils";
-import { LinearGradient } from "expo-linear-gradient";
 import { Dimensions, StyleSheet, Text, View } from "react-native";
 import SortableList from "./DragToRearrange";
 
@@ -10,12 +9,11 @@ const SIZE = width / 2 - MARGIN;
 
 const renderItems = () => (
     [...Array(6)].map((_, index) => (
-        <LinearGradient
+        <View
             key={index}
-            style={[styles.box]}
-            colors={['#DA22FF', '#9733EE']}>
+            style={styles.box}>
             <Text style={styles.text}>{index}</Text>
-        </LinearGradient>
+        </View>
     ))
 )
 
@@ -47,7 +45,8 @@ const styles = StyleSheet.create({
         elevation: 5,
         alignSelf: 'center',
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        backgroundColor: Colors.purple
     },
     text: {
         color: Colors.white,

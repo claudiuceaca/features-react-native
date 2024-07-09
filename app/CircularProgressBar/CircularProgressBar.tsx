@@ -1,20 +1,32 @@
-import { StyleSheet, View, Animated, TextInput } from 'react-native'
-import React, { useEffect, useRef } from 'react'
-import Svg, { G, Circle } from 'react-native-svg';
+import { Colors } from '@/constants/Colors';
+import React, { useEffect, useRef } from 'react';
+import { Animated, StyleSheet, TextInput, View } from 'react-native';
+import Svg, { Circle, G } from 'react-native-svg';
 
 const AnimatedCircle = Animated.createAnimatedComponent(Circle);
 const AnimatedInput = Animated.createAnimatedComponent(TextInput);
+
+type CircularProgressBarProps = {
+    percentage?: number;
+    radius?: number;
+    strokeWidth?: number;
+    duration?: number;
+    color?: string;
+    delay?: number;
+    textColor?: string;
+    max?: number;
+};
 
 const CircularProgressBar = ({
     percentage = 75,
     radius = 40,
     strokeWidth = 10,
     duration = 500,
-    color = '#9733EE',
+    color = Colors.purple,
     delay = 500,
-    textColor = '#9733EE',
+    textColor = Colors.purple,
     max = 100,
-}) => {
+}: CircularProgressBarProps) => {
     const animatedValue = useRef(new Animated.Value(0)).current;
     const circleRef = useRef(null);
     const inputRef = useRef(null);
@@ -61,8 +73,8 @@ const CircularProgressBar = ({
             <Svg width={radius * 2} height={radius * 2} viewBox={`0 0 ${halfCircle * 2} ${halfCircle * 2}`}>
                 <G rotation={'-90'} origin={`${halfCircle}, ${halfCircle}`}>
                     <Circle
-                        cx="50%"
-                        cy="50%"
+                        cx='50%'
+                        cy='50%'
                         stroke={color}
                         strokeWidth={strokeWidth}
                         r={radius}
@@ -71,8 +83,8 @@ const CircularProgressBar = ({
                     />
                     <AnimatedCircle
                         ref={circleRef}
-                        cx="50%"
-                        cy="50%"
+                        cx='50%'
+                        cy='50%'
                         stroke={color}
                         strokeWidth={strokeWidth}
                         r={radius}
@@ -104,4 +116,13 @@ const CircularProgressBar = ({
 
 export default CircularProgressBar
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+    container: {
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    animatedInput: {
+        fontWeight: '900',
+        textAlign: 'center',
+    },
+});

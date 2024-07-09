@@ -1,5 +1,7 @@
+import { Colors } from '@/constants/Colors';
+import { DEVICE_SIZE } from '@/constants/utils';
 import React, { Component, PropsWithChildren } from 'react';
-import { Animated, StyleSheet, Text, View, I18nManager } from 'react-native';
+import { Animated, I18nManager, StyleSheet, Text, View } from 'react-native';
 import { RectButton, Swipeable } from 'react-native-gesture-handler';
 
 export default class SwipeableRow extends Component<
@@ -14,7 +16,7 @@ export default class SwipeableRow extends Component<
         });
         return (
             <Animated.View style={{ transform: [{ translateX: trans }] }}>
-                <RectButton style={[styles.leftAction, { backgroundColor: '#DA22FF' }]} onPress={this.close}>
+                <RectButton style={[styles.leftAction, { backgroundColor: Colors.purple }]} onPress={this.close}>
                     <Text style={styles.actionText}>Archive</Text>
                 </RectButton>
             </Animated.View>
@@ -105,7 +107,7 @@ const styles = StyleSheet.create({
     },
     actionText: {
         color: 'white',
-        fontSize: 16,
+        fontSize: DEVICE_SIZE.SMALL_DEVICE ? 12 : (DEVICE_SIZE.MEDIUM_DEVICE ? 14 : 16),
         backgroundColor: 'transparent',
         padding: 10,
     },

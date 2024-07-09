@@ -1,3 +1,4 @@
+import { Colors } from '@/constants/Colors';
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import DraggableFlatList from 'react-native-draggable-flatlist';
@@ -42,7 +43,7 @@ export default DraggableFlatListComponent;
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#fff',
+        backgroundColor: Colors.white,
         justifyContent: 'center',
         width: '100%'
     },

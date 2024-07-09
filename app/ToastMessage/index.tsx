@@ -1,4 +1,5 @@
 import Button from '@/components/Button';
+import { Colors } from '@/constants/Colors';
 import React, { useRef } from 'react';
 import {
     SafeAreaView,
@@ -38,7 +39,7 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: '#fff',
+        backgroundColor: Colors.white,
         paddingHorizontal: 20,
         gap: 20
     },
