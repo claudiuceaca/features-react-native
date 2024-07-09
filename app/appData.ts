@@ -53,6 +53,10 @@ export const features = [
         id: 11,
         title: 'FlatList Animated',
         path: '/FlatListAnimated'
+    }, {
+        id: 12,
+        title: 'Linear Progress Bar',
+        path: '/LinearProgressBar'
     },
 ]
 
@@ -111,5 +115,9 @@ export const screenData = [
         id: 11,
         name: "FlatListAnimated/index",
         title: 'FlatList Animated',
+    }, {
+        id: 12,
+        name: "LinearProgressBar/index",
+        title: 'Linear Progress Bar',
     },
 ]
