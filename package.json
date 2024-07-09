@@ -2,6 +2,7 @@
   "name": "features-react-native",
   "main": "expo-router/entry",
   "version": "1.0.0",
+  "description": "by Claudiu Ceaca",
   "scripts": {
     "start": "expo start",
     "reset-project": "node ./scripts/reset-project.js",

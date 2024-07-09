@@ -55,6 +55,7 @@ Welcome to Features React Native, a repository showcasing various features and c
 | Circular Progress Bar      | <img src="/app/CircularProgressBar/DemoCircularProgressbar.gif" alt="Circular Progress Bar" width="210"/>        |
 | Toast Message      | <img src="/app/ToastMessage/DemoToastMessage.gif" alt="Toast Message" width="210"/>        |
 | FlatList Animated      | <img src="/app/FlatListAnimated/DemoFlatListAnimated.gif" alt="FlatList Animated" width="210"/>        |
+| Linear Progress Bar      | <img src="/app/LinearProgressBar/DemoLinearProgressBar.gif" alt="Linear Progress Bar" width="210"/>        |
 
 ## Folder Structure:
           /                                         
