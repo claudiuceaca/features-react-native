@@ -13,13 +13,14 @@ import Animated, {
     withTiming
 } from 'react-native-reanimated';
 import { Close, Edit, Save, Send } from '@/assets/images/floatingbutton';
+import { Colors } from '@/constants/Colors';
 
 type FloatingButtonItemProps = {
     Icon: FunctionComponent<SVGAttributes<SVGElement>>;
     animatedStyle: any;
 };
 
-const colors = ['#DA22FF', '#9733EE'];
+const colors = ['#DA22FF', Colors.purple];
 
 const FloatingButtonItem = ({ Icon, animatedStyle, }: FloatingButtonItemProps) => {
     return (

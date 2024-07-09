@@ -10,7 +10,7 @@ const App = () => {
     return (
         <View style={styles.container}>
             <Text style={styles.textRating}>{rating}</Text>
-            <StarRating rating={rating} setRating={setRating} color={'#9733EE'} />
+            <StarRating rating={rating} setRating={setRating} color={Colors.purple} />
         </View>
     )
 }

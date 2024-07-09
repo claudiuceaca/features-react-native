@@ -1,7 +1,8 @@
+import { Colors } from '@/constants/Colors'
+import { DEVICE_SIZE } from '@/constants/utils'
 import React, { useEffect, useState } from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 import LinearProgressBar from './LinearProgressBar'
-import { DEVICE_SIZE } from '@/constants/utils'
 
 const App = () => {
     const [step, setStep] = useState(0)
@@ -19,7 +20,7 @@ const App = () => {
     return (
         <View style={styles.container}>
             <Text style={styles.steps}>{step} / {10}</Text>
-            <LinearProgressBar step={step} steps={10} height={20} backgroundColor='#9733EE' />
+            <LinearProgressBar step={step} steps={10} height={20} backgroundColor={Colors.purple} />
         </View>
     )
 }
@@ -33,7 +34,7 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     steps: {
-        color: '#9733EE',
+        color: Colors.purple,
         fontSize: DEVICE_SIZE.SMALL_DEVICE ? 16 : (DEVICE_SIZE.MEDIUM_DEVICE ? 18 : 20),
         fontWeight: '700',
         marginBottom: 20,

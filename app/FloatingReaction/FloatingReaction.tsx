@@ -1,3 +1,4 @@
+import { Colors } from "@/constants/Colors";
 import { AntDesign } from "@expo/vector-icons";
 import React, { useEffect, useRef, useState } from "react";
 import { Animated, Dimensions, Easing, StyleSheet, TouchableOpacity, View } from "react-native";
@@ -74,7 +75,7 @@ const FloatingReaction = (props: FloatingReactionProps) => {
                 [positionProp]: 32
 
             }]}>
-                <AntDesign name={iconName} size={24} color="#FFF" />
+                <AntDesign name={iconName} size={24} color={Colors.white} />
             </TouchableOpacity>
         </>
     );

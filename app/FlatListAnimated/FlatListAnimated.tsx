@@ -1,3 +1,4 @@
+import { Colors } from '@/constants/Colors';
 import React, { useCallback } from 'react';
 import { FlatList, ListRenderItemInfo, StyleSheet, Text, ViewToken } from 'react-native';
 import Animated, { SharedValue, useAnimatedStyle, useSharedValue, withTiming } from 'react-native-reanimated';
@@ -12,7 +13,7 @@ type DataItem = {
     id: number;
 }[]
 
-const ListItem = React.memo(({ item, index, viewableItems }: ListItemProps) => {
+const ListItem = React.memo(({ item, viewableItems }: ListItemProps) => {
     const rStyle = useAnimatedStyle(() => {
         const isVisible = Boolean(
             viewableItems.value
@@ -64,13 +65,13 @@ const styles = StyleSheet.create({
     listItem: {
         height: 80,
         width: '90%',
-        backgroundColor: '#9733EE',
+        backgroundColor: Colors.purple,
         marginTop: 20,
         borderRadius: 20,
         alignSelf: 'center',
     },
     listItemText: {
-        color: 'white',
+        color: Colors.white,
         textAlign: 'center',
         lineHeight: 80,
     },

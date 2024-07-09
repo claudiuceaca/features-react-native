@@ -2,6 +2,7 @@ import React from 'react';
 import { TouchableOpacity, Text, StyleSheet, ViewStyle, TextStyle, StyleProp } from 'react-native';
 import GradientWrapper from './GradientWrapper';
 import { DEVICE_SIZE } from '@/constants/utils';
+import { Colors } from '@/constants/Colors';
 
 interface ButtonProps {
     text: string;
@@ -30,7 +31,7 @@ const styles = StyleSheet.create({
     },
     text: {
         fontSize: DEVICE_SIZE.SMALL_DEVICE ? 16 : (DEVICE_SIZE.MEDIUM_DEVICE ? 18 : 20),
-        color: '#FFFFFF',
+        color: Colors.white,
         fontWeight: 'bold',
     },
 });

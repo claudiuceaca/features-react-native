@@ -1,6 +1,7 @@
-import { StyleSheet, View, Animated, TextInput } from 'react-native'
-import React, { useEffect, useRef } from 'react'
-import Svg, { G, Circle } from 'react-native-svg';
+import { Colors } from '@/constants/Colors';
+import React, { useEffect, useRef } from 'react';
+import { Animated, StyleSheet, TextInput, View } from 'react-native';
+import Svg, { Circle, G } from 'react-native-svg';
 
 const AnimatedCircle = Animated.createAnimatedComponent(Circle);
 const AnimatedInput = Animated.createAnimatedComponent(TextInput);
@@ -21,9 +22,9 @@ const CircularProgressBar = ({
     radius = 40,
     strokeWidth = 10,
     duration = 500,
-    color = '#9733EE',
+    color = Colors.purple,
     delay = 500,
-    textColor = '#9733EE',
+    textColor = Colors.purple,
     max = 100,
 }: CircularProgressBarProps) => {
     const animatedValue = useRef(new Animated.Value(0)).current;

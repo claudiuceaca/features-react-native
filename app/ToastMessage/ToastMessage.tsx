@@ -11,6 +11,7 @@ import Animated, {
 } from 'react-native-reanimated';
 import { AntDesign } from '@expo/vector-icons';
 import { DEVICE_SIZE } from '@/constants/utils';
+import { Colors } from '@/constants/Colors';
 
 export interface IToast {
     show: (text: string, type: 'info' | 'success' | 'error', duration: number) => void;
@@ -99,17 +100,17 @@ const Toast = forwardRef<IToast, Props>(({ duration = 500, onHide }, ref) => {
 
     function generateImage() {
         switch (config?.type) {
-            case 'success': return <AntDesign name="check" size={20} color="white" />;
-            case 'error': return <AntDesign name="close" size={20} color="white" />;
-            default: return <AntDesign name="info" size={20} color="white" />;
+            case 'success': return <AntDesign name="check" size={20} color={Colors.white} />;
+            case 'error': return <AntDesign name="close" size={20} color={Colors.white} />;
+            default: return <AntDesign name="info" size={20} color={Colors.white} />;
         }
     }
 
     function generateBackgroundColor() {
         switch (config?.type) {
-            case 'success': return '#9733EE';
-            case 'error': return '#9733EE';
-            default: return '#9733EE';
+            case 'success': return Colors.purple;
+            case 'error': return Colors.purple;
+            default: return Colors.purple;
         }
     }
 
@@ -179,7 +180,7 @@ const styles = StyleSheet.create({
         height: 20
     },
     text: {
-        color: 'white',
+        color: Colors.white,
         fontWeight: '600',
         fontSize: DEVICE_SIZE.SMALL_DEVICE ? 12 : (DEVICE_SIZE.MEDIUM_DEVICE ? 14 : 16),
         marginLeft: 12,
