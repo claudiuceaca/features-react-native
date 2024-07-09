@@ -1,6 +1,5 @@
 import { Colors } from "@/constants/Colors";
 import { DEVICE_SIZE } from "@/constants/utils";
-import { LinearGradient } from "expo-linear-gradient";
 import { Dimensions, StyleSheet, Text, View } from "react-native";
 import SortableList from "./DragToRearrange";
 

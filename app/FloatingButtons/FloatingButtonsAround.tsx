@@ -1,6 +1,5 @@
-import { LinearGradient } from 'expo-linear-gradient';
 import React, { FunctionComponent, SVGAttributes } from 'react';
-import { Pressable, StyleSheet, TouchableOpacity } from 'react-native';
+import { Pressable, StyleSheet, TouchableOpacity, View } from 'react-native';
 import Animated, {
     Easing,
     Extrapolation,
@@ -25,11 +24,9 @@ const colors = ['#DA22FF', Colors.purple];
 const FloatingButtonItem = ({ Icon, animatedStyle, }: FloatingButtonItemProps) => {
     return (
         <Animated.View style={[styles.contentContainer, animatedStyle]}>
-            <LinearGradient colors={colors}>
-                <TouchableOpacity style={styles.iconContainer}>
-                    <Icon width={22} height={22} />
-                </TouchableOpacity>
-            </LinearGradient>
+            <TouchableOpacity style={styles.iconContainer}>
+                <Icon width={22} height={22} />
+            </TouchableOpacity>
         </Animated.View>
     );
 };
@@ -120,12 +117,10 @@ const FloatingButtonsAround = () => {
                 onPress={() => {
                     handlePress();
                 }}>
-                <LinearGradient
-                    colors={colors}>
-                    <Animated.View style={[styles.iconContainer, plusIcon]}>
-                        <Close width={22} height={22} />
-                    </Animated.View>
-                </LinearGradient>
+
+                <Animated.View style={[styles.iconContainer, plusIcon]}>
+                    <Close width={22} height={22} />
+                </Animated.View>
             </Pressable>
         </>
     );
@@ -139,13 +134,14 @@ const styles = StyleSheet.create({
         bottom: 30,
         right: 30,
         borderRadius: 50,
-        overflow: 'hidden'
+        overflow: 'hidden',
     },
     iconContainer: {
         width: 60,
         height: 60,
         justifyContent: 'center',
         alignItems: 'center',
+        backgroundColor: Colors.purple
     },
     icon: {
         width: 26,

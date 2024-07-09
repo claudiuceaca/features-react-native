@@ -1,4 +1,5 @@
-import { LinearGradient } from 'expo-linear-gradient';
+import { Colors } from '@/constants/Colors';
+import { DEVICE_SIZE } from '@/constants/utils';
 import React, { useRef, useState } from 'react';
 import {
     Dimensions,
@@ -9,8 +10,6 @@ import {
     View
 } from 'react-native';
 import { colors } from './flatlistSyncedData';
-import { DEVICE_SIZE } from '@/constants/utils';
-import { Colors } from '@/constants/Colors';
 
 const { width, height } = Dimensions.get('screen');
 const IMAGE_SIZE = width / 5;
@@ -60,10 +59,11 @@ const FlatListSynced = () => {
                 keyExtractor={item => item.id.toString()}
                 renderItem={({ item, index }) => (
                     <View style={{ width, height }}>
-                        <LinearGradient
-                            colors={item.color}
+                        <View
+
                             style={[StyleSheet.absoluteFillObject,
-                            styles.indexTextBig
+                            styles.indexTextBig,
+                            { backgroundColor: item.color }
                             ]}>
                             <Text style={{
                                 color: Colors.white,
@@ -73,7 +73,7 @@ const FlatListSynced = () => {
                             }}>
                                 {index}
                             </Text>
-                        </LinearGradient>
+                        </View>
                     </View >
                 )}
             />
@@ -91,16 +91,16 @@ const FlatListSynced = () => {
                         onPress={() => scrollToActiveIndex(index)}
                         activeOpacity={0.7}
                     >
-                        <LinearGradient
-                            colors={item.color}
+                        <View
                             style={[styles.thumbImage,
                             {
-                                borderColor: activeIndex === index ? '#fff' : 'transparent'
+                                borderColor: activeIndex === index ? '#fff' : 'transparent',
+                                backgroundColor: item.color
                             }]}>
                             <Text style={styles.indexText}>
                                 {index}
                             </Text>
-                        </LinearGradient>
+                        </View>
                     </TouchableOpacity>
                 )}
             />

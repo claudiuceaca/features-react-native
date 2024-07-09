@@ -1,5 +1,5 @@
 import React from 'react';
-import { TouchableOpacity, Text, StyleSheet, ViewStyle, TextStyle, StyleProp } from 'react-native';
+import { TouchableOpacity, Text, StyleSheet, ViewStyle, TextStyle, StyleProp, View } from 'react-native';
 import GradientWrapper from './GradientWrapper';
 import { DEVICE_SIZE } from '@/constants/utils';
 import { Colors } from '@/constants/Colors';
@@ -14,20 +14,22 @@ interface ButtonProps {
 const Button: React.FC<ButtonProps> = ({ text, onPress, buttonStyle, textStyle }) => {
     return (
         <TouchableOpacity onPress={onPress} style={{ width: '100%' }}>
-            <GradientWrapper style={[styles.button, buttonStyle]}>
+            <View style={[styles.button, buttonStyle]}>
                 <Text style={[styles.text, textStyle]}>{text}</Text>
-            </GradientWrapper>
+            </View>
         </TouchableOpacity>
     );
 };
 
 const styles = StyleSheet.create({
     button: {
-        borderRadius: 8,
+        borderRadius: 10,
         height: 40,
         width: '100%',
         justifyContent: 'center',
         alignItems: 'center',
+        backgroundColor: Colors.purple,
+        overflow: 'hidden'
     },
     text: {
         fontSize: DEVICE_SIZE.SMALL_DEVICE ? 16 : (DEVICE_SIZE.MEDIUM_DEVICE ? 18 : 20),

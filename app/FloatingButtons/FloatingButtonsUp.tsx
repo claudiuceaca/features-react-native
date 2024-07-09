@@ -1,4 +1,5 @@
-import { LinearGradient } from 'expo-linear-gradient';
+import { Close, Edit, Save, Send } from '@/assets/images/floatingbutton';
+import { Colors } from '@/constants/Colors';
 import React, { FunctionComponent, SVGAttributes } from 'react';
 import { Pressable, StyleSheet, TouchableOpacity } from 'react-native';
 import Animated, {
@@ -13,8 +14,6 @@ import Animated, {
     withSpring,
     withTiming,
 } from 'react-native-reanimated';
-import { Close, Edit, Save, Send } from '@/assets/images/floatingbutton';
-import { Colors } from '@/constants/Colors';
 
 type FloatingButtonItemProps = {
     value: SharedValue<number>;
@@ -41,11 +40,9 @@ const FloatingButtonItem = ({ value, delay, Icon }: FloatingButtonItemProps) => 
 
     return (
         <Animated.View style={[styles.contentContainer, animatedStyle]}>
-            <LinearGradient colors={colors}>
-                <TouchableOpacity style={styles.iconContainer}>
-                    <Icon width={22} height={22} />
-                </TouchableOpacity>
-            </LinearGradient>
+            <TouchableOpacity style={styles.iconContainer}>
+                <Icon width={22} height={22} />
+            </TouchableOpacity>
         </Animated.View>
     );
 };
@@ -92,12 +89,10 @@ const FloatingButtonsUp = () => {
             <Pressable
                 style={styles.contentContainer}
                 onPress={handlePress}>
-                <LinearGradient
-                    colors={colors}>
-                    <Animated.View style={[styles.iconContainer, plusIcon]}>
-                        <Close width={22} height={22} />
-                    </Animated.View>
-                </LinearGradient>
+
+                <Animated.View style={[styles.iconContainer, plusIcon]}>
+                    <Close width={22} height={22} />
+                </Animated.View>
             </Pressable>
         </>
     );
@@ -118,6 +113,7 @@ const styles = StyleSheet.create({
         height: 60,
         justifyContent: 'center',
         alignItems: 'center',
+        backgroundColor: Colors.purple
     },
     icon: {
         width: 26,
