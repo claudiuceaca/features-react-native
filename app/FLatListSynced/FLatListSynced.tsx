@@ -9,6 +9,7 @@ import {
     View
 } from 'react-native';
 import { colors } from './flatlistSyncedData';
+import { DEVICE_SIZE } from '@/constants/utils';
 
 const { width, height } = Dimensions.get('screen');
 const IMAGE_SIZE = width / 5;
@@ -63,7 +64,7 @@ const FlatListSynced = () => {
                             style={[StyleSheet.absoluteFillObject,
                             styles.indexTextBig
                             ]}>
-                            <Text style={{ color: 'white', fontSize: 50 }}>
+                            <Text style={{ color: 'white', fontSize: DEVICE_SIZE.SMALL_DEVICE ? 40 : (DEVICE_SIZE.MEDIUM_DEVICE ? 45 : 50) }}>
                                 {index}
                             </Text>
                         </LinearGradient>

@@ -1,5 +1,6 @@
 import BottomSheetExpandable from '@/app/BottomSheet/BottomSheetExpandable';
 import { Colors } from '@/constants/Colors';
+import { DEVICE_SIZE } from '@/constants/utils';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
@@ -22,7 +23,7 @@ const styles = StyleSheet.create({
     },
     text: {
         color: Colors.purple,
-        fontSize: 17,
+        fontSize: DEVICE_SIZE.SMALL_DEVICE ? 13 : (DEVICE_SIZE.MEDIUM_DEVICE ? 15 : 17),
         fontWeight: '600',
         textAlign: 'center',
         marginTop: 20

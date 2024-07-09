@@ -10,6 +10,7 @@ import Animated, {
     runOnJS
 } from 'react-native-reanimated';
 import { AntDesign } from '@expo/vector-icons';
+import { DEVICE_SIZE } from '@/constants/utils';
 
 export interface IToast {
     show: (text: string, type: 'info' | 'success' | 'error', duration: number) => void;
@@ -180,7 +181,7 @@ const styles = StyleSheet.create({
     text: {
         color: 'white',
         fontWeight: '600',
-        fontSize: 16,
+        fontSize: DEVICE_SIZE.SMALL_DEVICE ? 12 : (DEVICE_SIZE.MEDIUM_DEVICE ? 14 : 16),
         marginLeft: 12,
         textAlign: 'center'
     }

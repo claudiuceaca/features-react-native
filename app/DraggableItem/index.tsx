@@ -3,6 +3,7 @@ import { StyleSheet, Text, TouchableOpacity } from 'react-native';
 import { RenderItemParams } from 'react-native-draggable-flatlist';
 import DraggableFlatListComponent from './DraggableFlatlist';
 import { Item, initialData } from './initialData';
+import { DEVICE_SIZE } from '@/constants/utils';
 
 const App = () => {
     const [data, setData] = useState<Item[]>(initialData);
@@ -48,7 +49,7 @@ const styles = StyleSheet.create({
     },
     text: {
         color: 'white',
-        fontSize: 24,
+        fontSize: DEVICE_SIZE.SMALL_DEVICE ? 20 : (DEVICE_SIZE.MEDIUM_DEVICE ? 22 : 24),
         fontWeight: 'bold',
         textAlign: 'center',
     },

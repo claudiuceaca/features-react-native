@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 import LinearProgressBar from './LinearProgressBar'
+import { DEVICE_SIZE } from '@/constants/utils'
 
 const App = () => {
     const [step, setStep] = useState(0)
@@ -33,7 +34,7 @@ const styles = StyleSheet.create({
     },
     steps: {
         color: '#9733EE',
-        fontSize: 20,
+        fontSize: DEVICE_SIZE.SMALL_DEVICE ? 16 : (DEVICE_SIZE.MEDIUM_DEVICE ? 18 : 20),
         fontWeight: '700',
         marginBottom: 20,
         marginTop: -40,
