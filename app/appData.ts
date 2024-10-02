@@ -64,6 +64,11 @@ export const features = [
         title: 'Bar Chart Weekly',
         path: '/BarChartWeekly'
     },
+    {
+        id: 14,
+        title: 'Counter Animated',
+        path: '/CounterAnimated'
+    },
 ]
 
 export const screenData = [
@@ -131,5 +136,10 @@ export const screenData = [
         id: 13,
         name: "BarChartWeekly/index",
         title: 'Bar Chart Weekly',
+    },
+    {
+        id: 14,
+        name: "CounterAnimated/index",
+        title: 'Counter Animated',
     },
 ]
