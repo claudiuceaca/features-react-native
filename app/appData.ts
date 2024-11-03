@@ -69,6 +69,11 @@ export const features = [
         title: 'Counter Animated',
         path: '/CounterAnimated'
     },
+    {
+        id: 15,
+        title: 'Hour Picker Animated',
+        path: '/HourPickerAnimated'
+    },
 ]
 
 export const screenData = [
@@ -141,5 +146,10 @@ export const screenData = [
         id: 14,
         name: "CounterAnimated/index",
         title: 'Counter Animated',
+    },
+    {
+        id: 15,
+        name: "HourPickerAnimated/index",
+        title: 'Hour Picker Animated',
     },
 ]
